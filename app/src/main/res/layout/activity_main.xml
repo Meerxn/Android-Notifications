@@ -8,41 +8,24 @@
 
     <EditText
         android:id="@+id/title"
-        android:layout_width="355dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="293dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Title"
-        app:layout_constraintBottom_toTopOf="@+id/message"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/message"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginBottom="121dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Message "
-        app:layout_constraintBottom_toTopOf="@+id/channelTwoButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/channelOneButton"
+        android:id="@+id/channel1"
         android:layout_width="339dp"
         android:layout_height="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="148dp"
+        android:onClick="sendOnChannel1"
         android:text="Send on Channel 1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/message" />
 
@@ -50,14 +33,27 @@
         android:id="@+id/channelTwoButton"
         android:layout_width="343dp"
         android:layout_height="51dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="368dp"
         android:text="Send on Channel 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message" />
+        app:layout_constraintTop_toBottomOf="@+id/channel1" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
